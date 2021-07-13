@@ -5,18 +5,31 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
 }
-main{}
+main{
+    display: flex;
+    justify-content: center;
+}
 /* top players section  */
 .players-heading{
     color: #562EFF;
     font-size: 24px;
+    display: inline-block;
+    font-weight: 500;
+    
 }
 .container{
     background-color: white;
+    width: 870px;
+    padding: 30px;
 }
 .top-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.top-players h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
 }
 .players{
     display: flex;
