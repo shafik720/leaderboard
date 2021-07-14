@@ -98,11 +98,15 @@ main{
     height: 141px;
 }
 
-.filled{
-    color: gold;
+.course{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
 }
-.empty{
-    color: lightgrey;
+.course-details{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    padding: 10px;
 }
 .rating-section p{
     color: grey;
@@ -114,15 +118,11 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.course{
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 20px;
+.filled{
+    color: gold;
 }
-.course-details{
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-    padding: 10px;
+.empty{
+    color: lightgrey;
 }
 .duration{
     background: rgba(255, 228, 232, 0.911);
@@ -133,3 +133,24 @@ main{
 .duration a{
     color: #FF4A60
 }
+
+    /*----------------------------------
+    Making Responsive with media query 
+    ----------------------------------*/
+
+    @media only screen and (max-width:688px) {
+        .top-players, .container-blog, .course {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .players{
+            flex-direction: column;
+        }
+        .container{
+            width: 100%;            
+        }
+        .course{
+            row-gap: 30px;
+        }
+        
+    }
+   
