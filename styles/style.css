@@ -105,7 +105,6 @@ main{
 .course-details{
     box-shadow: 5px 5px 5px grey;
     border-radius: 10px;
-    border: 1px solid orangered;
     padding: 10px;
 }
 .rating-section p{
