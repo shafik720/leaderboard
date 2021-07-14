@@ -94,8 +94,7 @@ main{
 */
 
 .course-details img{
-    width: 266px;
-    height: 141px;
+    width: 100%;
 }
 
 .course{
@@ -106,6 +105,7 @@ main{
 .course-details{
     box-shadow: 5px 5px 5px grey;
     border-radius: 10px;
+    border: 1px solid orangered;
     padding: 10px;
 }
 .rating-section p{
